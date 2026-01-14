@@ -1,26 +1,31 @@
 {
-  "homepage": "https://abhiram47.github.io/projecthilbert",
   "name": "projecthilbert",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview",
-    "lint": "eslint ."
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
   },
   "dependencies": {
+    "katex": "^0.16.27",
+    "prismjs": "^1.30.0",
     "react": "^19.2.0",
-    "react-dom": "^19.2.0"
+    "react-dom": "^19.2.0",
+    "react-markdown": "^10.1.0",
+    "rehype-katex": "^7.0.1",
+    "remark-math": "^6.0.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.1",
     "@types/node": "^24.10.1",
+    "@types/prismjs": "^1.26.5",
     "@types/react": "^19.2.5",
     "@types/react-dom": "^19.2.3",
-    "@vitejs/plugin-react": "^5.1.1",
-    "babel-plugin-react-compiler": "^1.0.0",
+    "@vitejs/plugin-react": "^5.1.2",
+    "@vitejs/plugin-react-swc": "^4.2.2",
     "eslint": "^9.39.1",
     "eslint-plugin-react-hooks": "^7.0.1",
     "eslint-plugin-react-refresh": "^0.4.24",
